@@ -1,0 +1,12 @@
+body{
+    font-family: "Roboto Condensed", serif;
+}
+
+img {
+    width: 50%;
+    max-width: 250px;
+}
+
+h2 {
+    margin-top: 50px;
+}
