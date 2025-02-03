@@ -1,12 +1,85 @@
 body{
     font-family: "Roboto Condensed", serif;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
 }
 
 img {
     width: 50%;
     max-width: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+img:hover {
+    transform: scale(1.05);
+}
+
+
+nav {
+    background-color: #8b1313;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+h1 {
+    margin-top: 150px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #222;
 }
 
 h2 {
     margin-top: 50px;
+    font-size: 28px;
+    color: #222;
+}
+
+h3 {
+    margin-top: 50px;
+    font-size: 28px;
+    color: #222;
+}
+
+
+#dark-mode-toggle {
+    display: none;
+}
+
+.toggle-label {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    background: #444;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body:has(#dark-mode-toggle:checked) {
+    background-color: #121212;
+    color: white;
+}
+
+body:has(#dark-mode-toggle:checked) nav {
+    background-color: #222;
+}
+
+body:has(#dark-mode-toggle:checked) h2 {
+    color: white;
+}
+
+body:has(#dark-mode-toggle:checked) h1 {
+    color: rgb(236, 192, 192);
+}
+
+body:has(#dark-mode-toggle:checked) .toggle-label {
+    background: #777;
 }

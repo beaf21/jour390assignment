@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SF Sunsets</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  </head>
-  <body>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <input type="checkbox" id="dark-mode-toggle">
+    <label for="dark-mode-toggle" class="toggle-label">🌙 Dark Mode</label>
+
+    <nav>
+        <ul>
+            <li><a href="#Ocean-beach-section">Ocean Beach</a></li>
+            <li><a href="#Embarcadero-section">Embarcadero</a></li>
+            <li><a href="#Lands-end-section">Lands End</a></li>
+        </ul>
+    </nav>
+
     <h1>Top 3 Favorite Sunsets in San Francisco (so far!)</h1>
-    <button>
-      <a href="#Ocean-beach-section">Ocean Beach</a></button>
-    <button>
-      <a href="#Embarcadero-section">Embarcadero</a></button>
-    <button>
-      <a href="#Lands-end-section">Lands End</a></button>
-    <h2 id="Ocean-beach-section">Ocean Beach</h2>
-    <img src="oceanbeachsunset.jpeg">
-    <p>Watching the sunset at Ocean Beach was really special. I walked around and observed as people were surfing, walking their pets, and hanging out. </p>
-    <p>Picture taken on 01/24/2025.</p>
-    <p> </p>
-    <h2 id="Embarcadero-section">Embarcadero</h2>
-    <img src="embarcaderosunset.jpeg">
-    <p>I went to the Pier 1 (Embarcadero) the day after I got to SF. I loved reflecting on my journey as I saw the pinkish-purpleish sky.</p>
-    <p>Picture taken on 01/05/2025.</p>
-    <h2 id="Lands-end-section">Lands End</h2>
-    <img src="landsendsunset.jpeg">
-    <p>My friends and I went on the Lands End trail and finished it watching this beautiful sunset near the Sutra Baths.</p>
-    <p>Picture taken on 01/07/2025.</p>
 
+    <section id="Ocean-beach-section">
+        <h2>Ocean Beach</h2>
+        <img src="oceanbeachsunset.jpeg" class="gallery-img" alt="Ocean Beach Sunset">
+        <p>Watching the sunset at Ocean Beach was really special. I walked around and observed as people were surfing, walking their pets, and hanging out.</p>
+        <p><em>Picture taken on 01/24/2025.</em></p>
+    </section>
 
-  </body>
+    <section id="Embarcadero-section">
+        <h2>Embarcadero</h2>
+        <img src="embarcaderosunset.jpeg" class="gallery-img" alt="Embarcadero Sunset">
+        <p>I went to Pier 1 (Embarcadero) the day after I got to SF. I loved reflecting on my journey as I saw the pinkish-purple sky.</p>
+        <p><em>Picture taken on 01/05/2025.</em></p>
+    </section>
+
+    <section id="Lands-end-section">
+        <h2>Lands End</h2>
+        <img src="landsendsunset.jpeg" class="gallery-img" alt="Lands End Sunset">
+        <p>My friends and I went on the Lands End trail and finished it watching this beautiful sunset near the Sutro Baths.</p>
+        <p><em>Picture taken on 01/07/2025.</em></p>
+    </section>
+
+</body>
 </html>
